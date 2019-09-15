@@ -2,92 +2,118 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>Каталог готовых шаблонов</title>
+ <meta charset="utf-8">
+ <title>Магазин готовых шаблонов</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="" width="" height="" alt="Логотип дизайн-студии «Нёрдс»">
-      </a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul>
-        <li><button type="button">Корзина</button></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Магазин готовых шаблонов</h1>
-    <section>
-      <h2>Фильтр поиска</h2>
-      <h3>Сетка:</h3>
-      <ul>
-        <li><button>Адаптивная</button></li>
-        <li><button>Фиксированная</button></li>
-        <li><button>Резиновая</button></li>
-      </ul>
-      <h2>Особенности</h2>
-      <ul>
-        <li><button>Слайдер</button></li>
-        <li><button>Блок преимуществ</button></li>
-        <li><button>Новости</button></li>
-        <li><button>Галерея</button></li>
-        <li><button>Корзина</button></li>
-      </ul>
-      <p><button>Показать</button></p>
-    </section>
+ <header>
+  <nav>
+    <a href="index.html">
+      <img src="" width="" height="" alt="Логотип дизайн-студии «Нёрдс»">
+    </a>
+    <ul>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
+      <li><a href="#">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul>
+      <li><a href="">Корзина</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Магазин готовых шаблонов</h1>
+  <form>
+    <h2>Фильтр поиска</h2>
 
-    <section>
-      <h2>Сортировать:</h2>
-      <!-- Здест будет форма -->
-    </section>
+    <h3>Стоимость</h3>
+    <div>
+      <!-- Тут будет форма -->
+    </div>
 
-    <section>
-      <h2>Результаты после сортировки</h2>
-      <ul>
-        <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Sedona"></a></li>
-        <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Pink"></a></li>
-        <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Borodinski"></a></li>
-        <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Mishka"></a></li>
-        <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта A+"></a></li>
-        <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Кваст"></a></li>
-      </ul>
+    <h3>Сетка:</h3>
+    <div>
+      <input type="radio" id="viewChoice1"
+      name="view" value="adaptive" checked>
+      <label for="viewChoice1">Адаптивная</label>
+      <input type="radio" id="viewChoice2"
+      name="view" value="fixed">
+      <label for="viewChoice2">Фиксированная</label>
+      <input type="radio" id="viewChoice3"
+      name="view" value="rubber">
+      <label for="viewChoice3">Резиновая</label>
+    </div>
 
-      <ul>
-        <li><a></a>1</li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">Следующая</a></li>
-      </ul>
-    </section>
-  </main>
+    <h3>Особенности</h3>
+    <fieldset>
+      <input type="checkbox" name="option1" value="a1" checked>Слайдер</input><br>
+      <input type="checkbox" name="option1" value="a2">Блок преимуществ</input><br>
+      <input type="checkbox" name="option1" value="a3" checked>Новости</input><br>
+      <input type="checkbox" name="option1" value="a4">Галерея</input><br>
+      <input type="checkbox" name="option1" value="a5"> Корзина</input><br>     
+    </fieldset>
+    <p><button>Показать</button></p>
+  </form>
 
-  <footer>
-    <section>
-      <h2>Контакты</h2>
-      <p>Nёрдс design studio</p>
-      <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная,д. 19/8</p>
-        <p>тел. +7(812)275-75-75</p>
-        <a href="">Напишите нам</a>
-        <img src="" width="" height="" alt="Карта с указанием нашего местонахождения">
-      </section>
-      <div>
-        <h2>Давай дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-  </html>
+  <form>
+    <h3>Сортировать:</h3>
+    <div>
+      <input type="radio" id="viewChoice1"
+      name="view" value="price" checked>
+      <label for="viewChoice1">По цене</label>
+      <input type="radio" id="viewChoice2"
+      name="view" value="type">
+      <label for="viewChoice2">По типу</label>
+      <input type="radio" id="viewChoice3"
+      name="view" value="name">
+      <label for="viewChoice3">По названию</label>
+    </div>
+
+    <button></button>
+    <button></button>
+  </form>
+
+  <section>
+    <h2>Результаты после сортировки</h2>
+    <ul>
+      <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Sedona"></a></li>
+      <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Pink"></a></li>
+      <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Borodinski"></a></li>
+      <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Mishka"></a></li>
+      <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта A+"></a></li>
+      <li><a href=""><img src="" width="" height="" alt="Фото страницы сайта Кваст"></a></li>
+    </ul>
+
+    <ul>
+      <li><a></a>1</li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">Следующая</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <section>
+    <h2>Контакты</h2>
+    <p>Nёрдс design studio</p>
+    <p>191186, Санкт-Петербург,<br>
+    ул. Б. Конюшенная,д. 19/8</p>
+    <p>тел. +7(812)275-75-75</p>
+    <a href="">Напишите нам</a>
+    <img src="" width="" height="" alt="Карта с указанием нашего местонахождения">
+  </section>
+  <div>
+    <h2>Давай дружить, это выгодно!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <ul>
+      <li><a href="#">Вконтакте</a></li>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
