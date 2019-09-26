@@ -1,8 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	front-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 20px;
+	color: #eeeeee;
+
+	background-color: #ffffff;
+}
+
+.site-navigation, user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	bacground-color: #fb565a;
+}
+
+
+
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
