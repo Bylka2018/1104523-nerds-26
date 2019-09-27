@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	front-family: "Roboto", Arial, sans-serif;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -38,7 +38,7 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-	bacground-color: #fb565a;
+	background-color: #fb565a;
 }
 
 
