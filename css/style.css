@@ -17,33 +17,9 @@ a {
 	text-decoration: none;
 }
 
-.main-navigation {
-	font-size: 16px;
-	line-height: 20px;
-	color: #eeeeee;
-
-	background-color: #ffffff;
+li, ul {
+	list-style-type: none;
 }
-
-.site-navigation, user-navigation {
-	list-style: none;
-}
-
-.site-navigation a,
-.user-navigation a {
-	color: #000000;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-	background-color: #fb565a;
-}
-
-
-
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -51,3 +27,43 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+.header {
+	background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+	filter: alpha (opacity=80);
+	opacity: 0.80;
+}
+
+.main-header-logo:focus {
+ 	filter: alpha (opacity=30);
+	opacity: 0.30;
+}
+
+.site-navigation {
+	font-size: 16px;
+	line-height: 20px;
+	list-style: none;
+}
+
+.site-navigation a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:focus {
+	color: #bdbdbd;
+}
+
+.advanteges {
+	background-color: #eeeeee;
+}
+
+.advanteges-button {
+
+}
+
+
+
+
