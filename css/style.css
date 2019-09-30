@@ -53,7 +53,12 @@ li, ul {
 }
 
 .site-navigation a:focus {
-	color: #bdbdbd;
+	color: #bdbdbd;		
+}
+
+.site-navigation a:visited {
+	border-bottom: 2px solid; 
+	color: #fb565a;
 }
 
 .advanteges {
