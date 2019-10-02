@@ -182,8 +182,45 @@ padding-left: 36px;
 	opacity: 0.10;
 }
 
+address {
+	font-style: normal;
+}
 
+.address-title {
+	font-size: 18px;
+	font-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
+.address {
+	font-height: 18px;
+}
+
+.writetous-botton {
+	display: inline-block;
+	border-radius: 2px;
+	text-transform: uppercase;
+	background-color: #fb565a;
+	color: white;
+	padding: 19px 46px;
+	font-weight: 500;
+	font-height: 18px;
+}
+
+.writetous-botton:hover {
+	background-color: #e74246;
+}
+
+.writetous-botton:focus {
+	background-color: #d7373b;
+	color: #e48789;
+}
+
+/.map {
+	position: absolute;
+	clip: inset(160px, 150px, 242px,225px);
+}
 
 .friendship {
 	font-size: 36px;
@@ -196,12 +233,14 @@ padding-left: 36px;
 }
 
 .social a {
-	display: inline-block;
-	background-color: #e1e1e1;		
+	display: block;
+	background-color: #e1e1e1;	
+	background-size: contain;	
+	background-position: center;	
 	width: 80px;
 	height: 80px;
 	border-radius: 200px;
-	padding-left: 50px;
+	padding: 40px;
 }
 
 .social a:hover {
@@ -210,9 +249,4 @@ padding-left: 36px;
 
 .social a:focus {
 	background-color: #d7373b;
-}
-/*
-.social-svg:focus {
-	filter: alpha (opacity=30);
-	opacity: 0.30;
 }
