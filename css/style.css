@@ -49,8 +49,8 @@ li, ul {
 	list-style: none;
 }
 
-.site-navigation a:link {
-	color: white;
+.site-navigation li a {
+	color: black;
 }
 
 .site-navigation a:hover {
@@ -61,9 +61,13 @@ li, ul {
 	color: #bdbdbd;		
 }
 
+.basket {
+	color: black;
+}
+
 .advanteges-title {
 	font-size: 55px;
-	font-height: 55px;
+	line-height: 55px;
 	font-weight: 500;
 }
 .link-1 {
@@ -94,7 +98,7 @@ li, ul {
 
 .products {
 	font-size: 24px;
-	font-height: 30px;
+	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -144,7 +148,7 @@ background-color: #eab534;
 
 .about-title {
 	font-size: 45px;
-	font-height: 45px;
+	line-height: 45px;
 }
 
 .about-work {
@@ -158,12 +162,16 @@ padding-left: 36px;
 }
 
 .about-accuracy p {
-	font-height: 18px;
+	line-height: 18px;
+}
+
+sup {
+	vertical-align: -0.05px;
 }
 
 .about-accuracy span {
 	font-size: 45px;
-	font-height: 10,06px;
+	line-height: 10,06px;
 	font-weight: 700;
 }
 
@@ -188,13 +196,13 @@ address {
 
 .address-title {
 	font-size: 18px;
-	font-height: 30px;
+	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .address {
-	font-height: 18px;
+	line-height: 18px;
 }
 
 .writetous-botton {
@@ -205,7 +213,7 @@ address {
 	color: white;
 	padding: 19px 46px;
 	font-weight: 500;
-	font-height: 18px;
+	line-height: 18px;
 }
 
 .writetous-botton:hover {
@@ -217,29 +225,27 @@ address {
 	color: #e48789;
 }
 
-/.map {
+.map {
 	position: absolute;
 	clip: inset(160px, 150px, 242px,225px);
 }
 
 .friendship {
 	font-size: 36px;
-	font-height: 36px;
+	line-height: 36px;
 	font-weight: 700;
 }
 
 .sale {
-	font-height: 22px;
+	line-height: 22px;
 }
 
 .social a {
-	display: block;
+	display: inline-block;
 	background-color: #e1e1e1;	
 	background-size: contain;	
 	background-position: center;	
-	width: 80px;
-	height: 80px;
-	border-radius: 200px;
+	border-radius: 50%;
 	padding: 40px;
 }
 
