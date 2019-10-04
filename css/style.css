@@ -146,6 +146,17 @@ background-color: #eab534;
 	color: #edc47f;
 }
 
+.about-us {
+	padding-top: 40px;
+	padding-bottom: 81px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #eeeeee;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #eeeeee;
+}
+
 .about-title {
 	font-size: 45px;
 	line-height: 45px;
@@ -165,14 +176,15 @@ padding-left: 36px;
 	line-height: 18px;
 }
 
-sup {
-	vertical-align: -0.05px;
-}
-
 .about-accuracy span {
 	font-size: 45px;
-	line-height: 10,06px;
+	line-height: 45px;
 	font-weight: 700;
+}
+
+sup {
+	font-size: 30px;
+	vertical-align: text-top;
 }
 
 .customers-logo a {
