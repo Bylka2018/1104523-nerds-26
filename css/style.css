@@ -149,12 +149,8 @@ background-color: #eab534;
 .about-us {
 	padding-top: 40px;
 	padding-bottom: 81px;
-	border-top-width: 2px;
-	border-top-style: solid;
-	border-top-color: #eeeeee;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-bottom-color: #eeeeee;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .about-title {
@@ -187,9 +183,18 @@ sup {
 	vertical-align: text-top;
 }
 
+.customers {
+padding-bottom: 45px;
+border-bottom: 2px solid #eeeeee;
+}
+
 .customers-logo a {
 	filter: alpha (opacity=20);
 	opacity: 0.20;
+}
+
+ul.customers-logo li {
+display: inline;
 }
 
 .customers-logo a:hover {
@@ -202,8 +207,27 @@ sup {
 	opacity: 0.10;
 }
 
+.customer-barber {
+padding: 53px 45px 0 45px;
+border-left: 2px solid #eeeeee;
+border-right: 2px solid #eeeeee;
+}
+
+.customer-pink {
+padding: 53px 45px 0 45px;
+border-right: 2px solid #eeeeee;
+}
+
 address {
 	font-style: normal;
+}
+
+.address {
+	margin
+  text-align: center;
+	background-color: white;
+  width: 319px;
+  height: 309px;
 }
 
 .address-title {
@@ -213,7 +237,7 @@ address {
 	text-transform: uppercase;
 }
 
-.address {
+.address-text {
 	line-height: 18px;
 }
 
@@ -238,8 +262,7 @@ address {
 }
 
 .map {
-	position: absolute;
-	clip: inset(160px, 150px, 242px,225px);
+  clip-path: inset( 170px 0 270px 0);
 }
 
 .friendship {
@@ -250,6 +273,10 @@ address {
 
 .sale {
 	line-height: 22px;
+}
+
+div.social-media li {
+	display: inline;
 }
 
 .social a {
