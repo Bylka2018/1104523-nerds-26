@@ -1,3 +1,5 @@
+/*index.css*/
+
 body {
 	margin: 0;
 	padding: 0;
@@ -47,6 +49,10 @@ li, ul {
 	font-weight: 500;
 	text-transform: uppercase;
 	list-style: none;
+}
+
+.site-navigation li {
+	display: inline;
 }
 
 .site-navigation li a {
@@ -320,20 +326,127 @@ a.fb-button:focus {
 	background: url(../img/fb-icon-3.png) no-repeat;
 }
 
-a.instagram_button {
+a.instagram-button {
 	height: 80px;
 	width: 80px;
 	background: url(../img/instagram-icon-1.png) no-repeat;
 }
 
-a.instagram_button:hover {
+a.instagram-button:hover {
 	height: 80px;
 	width: 80px;
 	background: url(../img/instagram-icon-2.png) no-repeat;
 }
 
-a.instagram_button:focus {
+a.instagram-button:focus {
 	height: 80px;
 	width: 80px;
 	background: url(../img/instagram-icon-3.png) no-repeat;
+}
+
+/*write-to-us css*/
+
+.wu-title {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.wu-text {
+ font-size: 16px;
+ line-height: 18px;
+ font-weight: 600;
+}
+
+.send-button {
+	height: 50px;
+	width: 260px;
+	border: none;
+	border-radius: 2px;
+	background-color: #fb565a;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+.send-button:hover {
+	background-color: #e74246;
+}
+
+.send-button:focus {
+	background-color: #d7373b;
+	color: #e48789;
+}
+
+.close-cross {
+	filter: alpha (opacity=30);
+	opacity: 0.30;
+}
+
+.close-cross:hover {
+	filter: alpha (opacity=100);
+	opacity: 1.00;
+}
+
+.close-cross:focus {
+	filter: alpha (opacity=10);
+	opacity: 0.10;
+}
+
+.login-info {
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+	background-color: white;
+	font-size: 16px;
+	line-height: 18px;
+	opacity: 0.5;
+}
+
+.login-info	:focus {
+	opacity: 1.0;
+	border-color: #000000;
+}
+
+
+/*catalog css*/
+
+.main-h1 {
+	font-size: 55px;
+	line-height: 55px;
+	background-color: #eeeeee;
+  margin: 0;
+  text-align: center;	
+}
+
+fieldset, ul {
+	border: none;
+  padding: 0;
+}
+
+.show-button {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: uppercase;
+	text-align: center;
+	background-color: #eeeeee;
+	height: 50px;
+	width: 260px;
+	border: none;
+	border-radius: 2px;
+}
+
+.show-button:hover {
+	background-color: #dfdfdf;
+}
+
+.show-button:focus {
+	background-color: #d5d5d5;
+	color: #a9a9a9;
+}
+
+.pages li {
+	display: inline;
 }
