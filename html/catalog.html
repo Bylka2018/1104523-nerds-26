@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header container-header">
       <nav class="site-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="../img/nerds-logo.svg" width="176" height="75" alt="Логотип дизайн-студии «Нёрдс»">
@@ -25,16 +25,16 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container-maim">
       <h1 class="main-h1">Магазин готовых шаблонов</h1>
       <h2 class="visually-hidden">Фильтр поиска</h2>
       <section>
-        <h3>Стоимость</h3>
+        <h3 class="filter-font">Стоимость</h3>
         <input type="range" min="0" max="15000" step="1" value="7500"> 
       </section>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="filter-font filter-key-font">Сетка:</legend>
           <ul>
             <li><input type="radio" name="view" value="adaptive" checked>Адаптивная
             <li><input type="radio" name="view" value="fixed">Фиксированная
@@ -42,8 +42,8 @@
           </ul>
         </fieldset>
 
-        <fieldset>
-          <legend>Особенности</legend>
+        <fieldset class="filter-key-font">
+          <legend class="filter-font">Особенности</legend>
           <input type="checkbox" name="option1" value="a1" checked>Слайдер<br>
           <input type="checkbox" name="option1" value="a2">Блок преимуществ<br>
           <input type="checkbox" name="option1" value="a3" checked>Новости<br>
@@ -55,8 +55,8 @@
     
       <section>
         <form class="sort">
-          <fieldset>
-            <legend>Сортировать:</legend>
+          <fieldset class="show-how">
+            <legend class="show">Сортировать:</legend>
             <input type="radio" name="view" value="price" checked>По цене
             <input type="radio" name="view" value="type">По типу
             <input type="radio" name="view" value="name">По названию
@@ -87,7 +87,7 @@
       </section>
     </main>
 
-   <footer>
+   <footer class="container-footer">
       <section>
         <h2 class="visually-hidden">Контакты</h2>
         <section class="address">

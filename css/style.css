@@ -1,4 +1,7 @@
 /*index.css*/
+html {
+	box-sizing: border-box; 
+}
 
 body {
 	margin: 0;
@@ -344,7 +347,9 @@ a.instagram-button:focus {
 	background: url(../img/instagram-icon-3.png) no-repeat;
 }
 
+
 /*write-to-us css*/
+
 
 .wu-title {
 	font-size: 45px;
@@ -411,6 +416,7 @@ a.instagram-button:focus {
 
 /*catalog css*/
 
+
 .main-h1 {
 	font-size: 55px;
 	line-height: 55px;
@@ -422,6 +428,38 @@ a.instagram-button:focus {
 fieldset, ul {
 	border: none;
   padding: 0;
+}
+
+.filter-font {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.filter-key-font ul, li {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.filter-key-font {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.show {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.show-how {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
 }
 
 .show-button {
@@ -450,3 +488,24 @@ fieldset, ul {
 .pages li {
 	display: inline;
 }
+
+
+/*flex*/
+
+
+.container-header, .container-maim, .container-footer {
+	display: flex;
+}
+
+.container-header{
+	justify-content: space-between;
+}
+
+.container-maim {
+
+}
+
+.container-footer {
+
+}
+
