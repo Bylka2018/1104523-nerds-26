@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="header container-header">
+    <header class="header">
       <nav class="site-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="../img/nerds-logo.svg" width="176" height="75" alt="Логотип дизайн-студии «Нёрдс»">
@@ -25,70 +25,76 @@
       </nav>
     </header>
 
-    <main class="container-maim">
+    <main class="maim">
       <h1 class="main-h1">Магазин готовых шаблонов</h1>
       <h2 class="visually-hidden">Фильтр поиска</h2>
-      <section>
-        <h3 class="filter-font">Стоимость</h3>
-        <input type="range" min="0" max="15000" step="1" value="7500"> 
-      </section>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="filter-font filter-key-font">Сетка:</legend>
-          <ul>
-            <li><input type="radio" name="view" value="adaptive" checked>Адаптивная
-            <li><input type="radio" name="view" value="fixed">Фиксированная
-            <li><input type="radio" name="view" value="rubber">Резиновая
-          </ul>
-        </fieldset>
+      <div class="main-catalog-container">
+        <div class="catalog-box-navigation">
+          <section>
+            <h3 class="filter-font">Стоимость</h3>
+            <input type="range" min="0" max="15000" step="1" value="7500"> 
+          </section>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend class="filter-font">Сетка:</legend>
+              <ul class="filter-key-font">
+                <li><input type="radio" name="view" value="adaptive" checked>Адаптивная
+                <li><input type="radio" name="view" value="fixed">Фиксированная
+                <li><input type="radio" name="view" value="rubber">Резиновая
+              </ul>
+            </fieldset>
 
-        <fieldset class="filter-key-font">
-          <legend class="filter-font">Особенности</legend>
-          <input type="checkbox" name="option1" value="a1" checked>Слайдер<br>
-          <input type="checkbox" name="option1" value="a2">Блок преимуществ<br>
-          <input type="checkbox" name="option1" value="a3" checked>Новости<br>
-          <input type="checkbox" name="option1" value="a4">Галерея<br>
-          <input type="checkbox" name="option1" value="a5">Корзина<br>
-        </fieldset>
-        <button class="show-button" type="submit">Показать</button>
-      </form>
-    
-      <section>
-        <form class="sort">
-          <fieldset class="show-how">
-            <legend class="show">Сортировать:</legend>
-            <input type="radio" name="view" value="price" checked>По цене
-            <input type="radio" name="view" value="type">По типу
-            <input type="radio" name="view" value="name">По названию
-          </fieldset>
+            <fieldset class="filter-key-font">
+              <legend class="filter-font">Особенности</legend>
+              <input type="checkbox" name="option1" value="a1" checked>Слайдер<br>
+              <input type="checkbox" name="option1" value="a2">Блок преимуществ<br>
+              <input type="checkbox" name="option1" value="a3" checked>Новости<br>
+              <input type="checkbox" name="option1" value="a4">Галерея<br>
+              <input type="checkbox" name="option1" value="a5">Корзина<br>
+            </fieldset>
+            <button class="show-button" type="submit">Показать</button>
+          </form>
+        </div>
+        
+        <div class="catalog-container">
+          <section>
+            <form class="sort">
+              <fieldset class="show-how">
+                <legend class="show">Сортировать:</legend>
+                <input type="radio" name="view" value="price" checked>По цене
+                <input type="radio" name="view" value="type">По типу
+                <input type="radio" name="view" value="name">По названию
+              </fieldset>
 
-          <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button>
-          <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button>
-        </form>
-      </section>
+              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button>
+              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button>
+            </form>
+          </section>
 
-      <section>
-        <h2 class="visually-hidden">Результаты сортировки</h2>
-        <ul>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-sedona.jpg" width="360" height="620" alt="Фото страницы сайта Sedona"></a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-pink.jpg" width="360" height="620" alt="Фото страницы сайта Pink"></a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-barbershop.jpg" width="360" height="620" alt="Фото страницы сайта Borodinski"></a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-mishka.jpg" width="360" height="620" alt="Фото страницы сайта Mishka"></a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-aplus.jpg" width="360" height="620" alt="Фото страницы сайта A+"></a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-kvast.jpg" width="360" height="620" alt="Фото страницы сайта Кваст"></a></li>
-        </ul>
+          <section>
+            <h2 class="visually-hidden">Результаты сортировки</h2>
+            <ul>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-sedona.jpg" width="360" height="620" alt="Фото страницы сайта Sedona"></a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-pink.jpg" width="360" height="620" alt="Фото страницы сайта Pink"></a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-barbershop.jpg" width="360" height="620" alt="Фото страницы сайта Borodinski"></a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-mishka.jpg" width="360" height="620" alt="Фото страницы сайта Mishka"></a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-aplus.jpg" width="360" height="620" alt="Фото страницы сайта A+"></a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-kvast.jpg" width="360" height="620" alt="Фото страницы сайта Кваст"></a></li>
+            </ul>
 
-        <ol class="pages">
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
-        </ol>
-      </section>
+            <ol class="pages">
+              <li><a>1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Следующая</a></li>
+            </ol>
+          </section>
+        </div>
+      </div>
     </main>
 
-   <footer class="container-footer">
-      <section>
+   <footer class="footer">
+      <section class="container-address">
         <h2 class="visually-hidden">Контакты</h2>
         <section class="address">
           <address>
@@ -99,26 +105,28 @@
           </address>
           <a class="writetous-botton" href="write-to-us.html">Напишите нам</a>
         </section>
-        <img class="map" src="../img/nerds-footer-map.png" width="100%" height="auto" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
+        <img class="map" src="../img/nerds-footer-map.png" width="auto" height="100%" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
         <a href="#" aria-label="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75"><img src="../img/map-marker.png" alt=""></a>
       </section>
-      <section>
+      <section class="container-social">
         <div>
           <h2 class="visually-hidden">Выгодное предложение</h2>
           <p class="friendship">Давай дружить, это выгодно!</p>
           <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
         </div>
-        <ul class="social">
-          <li>
-            <a class="vk-button" href="https://vk.com" aria-label="Нёрдс во Вконтакте"></a>
-          </li>
-          <li>
-            <a class="fb-button" href="https://www.facebook.com" aria-label="Нёрдс в Фейсбук"></a>
-          </li>
-          <li>
-            <a class="instagram-button" href="https://www.instagram.com" aria-label="Нёрдс в Инстаграм"></a>
-          </li>
-        </ul>
+        <div class="child-social">
+          <ul class="social">
+            <li>
+              <a class="vk-button" href="https://vk.com" aria-label="Нёрдс во Вконтакте"></a>
+            </li>
+            <li>
+              <a class="fb-button" href="https://www.facebook.com" aria-label="Нёрдс в Фейсбук"></a>
+            </li>
+            <li>
+              <a class="instagram-button" href="https://www.instagram.com" aria-label="Нёрдс в Инстаграм"></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>

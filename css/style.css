@@ -49,10 +49,16 @@ li, ul {
 }
 
 .site-navigation {
+	width: 1440px;
+	height: 130px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	font-weight: 500;
 	text-transform: uppercase;
 	list-style: none;
 }
+
 
 .site-navigation li {
 	display: inline;
@@ -84,6 +90,7 @@ li, ul {
 	padding-bottom:13px;
 }
 .advanteges {
+	display: flex;
 	background-color: #eeeeee;
 }
 
@@ -103,6 +110,16 @@ li, ul {
 .advanteges-button:focus {
 	background-color: #d7373b;
 	color: #e48789;
+}
+
+.container-products {
+	display: flex;
+	flex-direction: row;	
+}	
+
+.container-products li{
+	display: flex;
+	flex-direction: column;
 }
 
 .products {
@@ -156,6 +173,7 @@ background-color: #eab534;
 }
 
 .about-us {
+	display: flex;
 	padding-top: 40px;
 	padding-bottom: 81px;
 	border-top: 2px solid #eeeeee;
@@ -177,6 +195,10 @@ background: url(../img/indexImg/stroke.png) no-repeat 0 11px;
 padding-left: 36px;
 }
 
+.about-accuracy {
+	display: flex;
+}
+
 .about-accuracy p {
 	line-height: 18px;
 }
@@ -193,8 +215,13 @@ sup {
 }
 
 .customers {
-padding-bottom: 45px;
-border-bottom: 2px solid #eeeeee;
+	padding-bottom: 45px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.customers-logo {
+	display: flex;
+	justify-content: space-around;
 }
 
 .customers-logo a {
@@ -229,6 +256,10 @@ border-right: 2px solid #eeeeee;
 
 address {
 	font-style: normal;
+}
+
+.container-address {
+	display: flex;
 }
 
 .address {
@@ -284,10 +315,18 @@ address {
 	line-height: 22px;
 }
 
-ul.social li {
-	display: inline;
+.container-social {
+	display: flex;
 }
 
+ul.social li {
+	display: inline;
+
+}
+
+.child-social {
+	order: -1;
+}
 
 ul.social a {
 	display: inline-block;
@@ -416,6 +455,9 @@ a.instagram-button:focus {
 
 /*catalog css*/
 
+.main-catalog-container {
+	display: flex;
+}
 
 .main-h1 {
 	font-size: 55px;
@@ -436,7 +478,7 @@ fieldset, ul {
 	font-weight: 700;
 }
 
-.filter-key-font ul, li {
+.filter-key-font li {
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 400;
@@ -489,23 +531,4 @@ fieldset, ul {
 	display: inline;
 }
 
-
-/*flex*/
-
-
-.container-header, .container-maim, .container-footer {
-	display: flex;
-}
-
-.container-header{
-	justify-content: space-between;
-}
-
-.container-maim {
-
-}
-
-.container-footer {
-
-}
 
