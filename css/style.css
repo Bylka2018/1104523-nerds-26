@@ -4,16 +4,14 @@ html {
 }
 
 body {
-	margin: 0;
+	margin:  auto;
 	padding: 0;
-	max-width: 1440px;
-
+	max-width: 1731px;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #000000;
-
 	background-color: #ffffff;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -24,9 +22,9 @@ a {
 }
 
 .container {
-	width: 1200px;
+	width: 1440px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 0px;
 }
 
 li, ul {
@@ -42,12 +40,15 @@ li, ul {
 }
 
 .main-header {
+	display: flex;
+	justify-content: center;
+	padding-top: 59px;
 	background-color: #eeeeee;
 }
 
 .slider {
 	position: relative;
-
+	min-height: 514px;
 	background-color: #eeeeee;
 }
 
@@ -119,13 +120,15 @@ li, ul {
 
 .slider-item{
 	display: none;
-	padding: 78px 0 80px 0;
+	/* padding: 78px 0 80px 0; */
 }
 
 .slider-item:nth-child(1) {
 	background-image: url(../img/indexImg/nerds-index-slide1.png);
 	background-repeat: no-repeat;
-	background-position: 93% 18px;
+	background-position: 95% -5px;
+	background-size: 917px 517px;
+	min-width: 1440px;
 }
 
 .slider-item:nth-child(2) {
@@ -226,16 +229,35 @@ li, ul {
 
 .site-navigation {
 	display: flex;
-	flex-direction: row;
-	max-width: 1440px;
-	height: 130px;
-
-  padding: 50px 140px 37px 140px;
-	
+	/* flex-direction: row; */
+	padding: 0 0px;
+	min-width: 1415px;
+	height: 79px;
 	justify-content: space-between;
+	align-items: center;
 	font-weight: 500;
 	text-transform: uppercase;
 	list-style: none;
+}
+
+.site-navigation img {
+    /* padding-top: 57px; */
+    /* padding-left: 12px; */
+    width: 215px;
+    height: 79px;
+}
+
+.site-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin: 0;
+    /* min-width: 522px; */
+    /* padding-bottom: 11px; */
+    /* padding-right: 67px; */
+    letter-spacing: 1.1px;
 }
 
 .site-navigation li {
@@ -254,8 +276,32 @@ li, ul {
 	color: #bdbdbd;		
 }
 
+.navigation {
+  padding-top: 11px;
+  width: 958px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+
+.navigation-store {
+	width: 527px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .basket {
+	width: 132px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* padding-top: 66px; */
+	/* padding-right: 28px; */
+	font-size: 18px;
+	align-items: center;
 	color: black;
+	letter-spacing: 0.05em;
 }
 
 .advanteges-title {
@@ -434,6 +480,7 @@ address {
 
 .container-address {
 	display: flex;
+	overflow: hidden;
 }
 
 .address {
