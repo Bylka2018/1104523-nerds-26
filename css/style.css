@@ -335,28 +335,70 @@ li, ul {
 	color: #e48789;
 }
 
-.container-products {
+.products {
+	min-height: 506px;
 	display: flex;
-	flex-direction: row;	
+	justify-content: center;
+}
+
+.container-products {
+	    padding-top: 78px;
+	    width: 1101px;
+	    margin: 0;
+	    padding-right: 61px;
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: row;
+	    justify-content: space-between;
 }	
 
 .container-products li{
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-bottom: 2px;
+	height: 347px;
 }
 
-.products {
+.container-products h3 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
+.container-products li a.img {
+	order: -1;
+	padding-left: 1px;
+}
+
+.container-products li h3 {
+	order: 1;
+	margin: 0;
+	margin-top: 3px;
+}
+
+.container-products li p {
+	order: 2;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.container-products li a {
+  order: 3;
+}
+
+
+
+
+
 .order-button-1, .order-button-2, .order-button-3 {
 	display: inline-block;
 	border-radius: 2px;
 	text-transform: uppercase;
-	padding: 19px 40px;
+	padding: 14px 40px;
 	color: white;
 } 
 
@@ -395,22 +437,100 @@ background-color: #eab534;
 	color: #edc47f;
 }
 
+.line {
+  width: 1161px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-vertical {
+	width: 2px;
+	height: 53px;
+	background-color: #eeeeee;
+	transform: rotate(180deg);
+	border: none;
+	margin-top: 61px;
+	margin-left: 1px;
+}
+
+hr {
+  border: none;
+  margin: 0;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
 .about-us {
 	display: flex;
-	padding-top: 40px;
-	padding-bottom: 81px;
-	border-top: 2px solid #eeeeee;
-	border-bottom: 2px solid #eeeeee;
+	padding-left: 130px;
+	justify-content: space-between;
+	padding-top: 28px;
+	padding-right: 125px;
+	padding-bottom: 36px;
+}
+
+.box1-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 460.6px;
+}
+
+.box2-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-title2{
+	margin: 0;
+	/* padding-bottom: 0px; */
+	/* padding-right: 0px; */
+	padding-left: 10px;
 }
 
 .about-title {
+	padding-top: 45px;
+	padding-left: 10px;
 	font-size: 45px;
 	line-height: 45px;
+	font-weight: 500;
+	margin: 0;
 }
 
-.about-work {
-	font-weight: 700;
+.box2-about h3 {
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 1px;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.02ex;
+}
+
+.about-work1 {
+	height: 16px;
+	margin: 0;
+	padding-top: 7px;
+	letter-spacing: 0.01em;
+	font-size: 16px;
+	padding-left: 10px;
+	font-weight: 600;
 	text-transform: uppercase;
+}
+
+.about-ul {
+  padding-left: 10px;
+  padding-bottom: 37px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 121px;
 }
 
 .about-stroke {
@@ -420,6 +540,16 @@ padding-left: 36px;
 
 .about-accuracy {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 41px;
+	margin: 0;
+	width: 343px;
+}
+
+ul.about-accuracy p {
+	margin: 0;
+  padding-top: 19px;
 }
 
 .about-accuracy p {
@@ -432,19 +562,29 @@ padding-left: 36px;
 	font-weight: 700;
 }
 
+.box2-about img {
+	width: 360px;
+	padding-right: 15px;
+	padding-top: 10px;
+	height: 209px;
+}
 sup {
-	font-size: 30px;
-	vertical-align: text-top;
+	font-size: 26px;
+	/* vertical-align: text-top; */
 }
 
 .customers {
-	padding-bottom: 45px;
-	border-bottom: 2px solid #eeeeee;
+	display: flex;
+	flex-wrap: wrap;
+	height: 180px;
+	justify-content: center;
 }
 
 .customers-logo {
 	display: flex;
 	justify-content: space-around;
+	margin: 0;
+	min-width: 1184px;
 }
 
 .customers-logo a {
@@ -467,14 +607,7 @@ display: inline;
 }
 
 .customer-barber {
-padding: 53px 45px 0 45px;
-border-left: 2px solid #eeeeee;
-border-right: 2px solid #eeeeee;
-}
-
-.customer-pink {
-padding: 53px 45px 0 45px;
-border-right: 2px solid #eeeeee;
+  padding-right: 2px;
 }
 
 address {
