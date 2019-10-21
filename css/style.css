@@ -317,7 +317,8 @@ li, ul {
 }
 .link-1 {
 	border-bottom:2px solid #fb565a;
-	padding-bottom:13px;
+	padding-bottom: 9px;
+	padding-left: 2px;
 }
 
 .advanteges-button {
@@ -881,14 +882,31 @@ a.instagram-button:focus {
 
 .main-catalog-container {
 	display: flex;
+	margin-right: 140px;
+	margin-left: 141px;
+	margin-top: 61px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.shop-h1 {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	min-height: 238px;
+	justify-content: center;
+	align-items: center;
+	background-color: #eeeeee;
 }
 
 .main-h1 {
 	font-size: 55px;
 	line-height: 55px;
 	background-color: #eeeeee;
-  margin: 0;
-  text-align: center;	
+	margin: 0;
+	font-weight: 600;
+	padding-bottom: 32px;
+	padding-right: 3px;
 }
 
 fieldset, ul {
