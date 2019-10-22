@@ -52,27 +52,29 @@
               </div>
             </fieldset> 
           </form>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
+          <form class="grid" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset >
               <legend class="filter-font">Сетка:</legend>
-              <ul class="filter-key-font">
+              <ul class="filter-grid">
                 <li><input type="radio" name="view" value="adaptive" checked>Адаптивная
                 <li><input type="radio" name="view" value="fixed">Фиксированная
                 <li><input type="radio" name="view" value="rubber">Резиновая
               </ul>
             </fieldset>
           </form>
-          <form class>
-            <fieldset class="filter-key-font">
-              <legend class="filter-font">Особенности</legend>
-              <input type="checkbox" name="option1" value="a1" checked>Слайдер<br>
-              <input type="checkbox" name="option1" value="a2">Блок преимуществ<br>
-              <input type="checkbox" name="option1" value="a3" checked>Новости<br>
-              <input type="checkbox" name="option1" value="a4">Галерея<br>
-              <input type="checkbox" name="option1" value="a5">Корзина<br>
+          <form class="feature">
+            <fieldset class="feature-input">
+              <legend class="filter-font">Особенности:</legend>
+              <ul class="filter-feature">
+                <li><input type="checkbox" name="option1" value="a1" checked>Слайдер<br>
+                <li><input type="checkbox" name="option1" value="a2">Блок преимуществ<br>
+                <li><input type="checkbox" name="option1" value="a3" checked>Новости<br>
+                <li><input type="checkbox" name="option1" value="a4">Галерея<br>
+                <li><input type="checkbox" name="option1" value="a5">Корзина<br>
+              </ul>
             </fieldset>
-            <button class="show-button" type="submit">Показать</button>
           </form>
+          <div class="filter-button"><button class="show-button" type="submit">Показать</button></div>
         </div>
         
         <div class="catalog-container">
