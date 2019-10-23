@@ -38,7 +38,7 @@
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
               <div class="range-filter">
-                <div class="range-controls  ">
+                <div class="range-controls">
                   <div class="scale">
                     <div class="bar" style="margin-left: 0%; width: 65%"></div>
                   </div>
@@ -73,43 +73,104 @@
                 <li><input type="checkbox" name="option1" value="a5">Корзина<br>
               </ul>
             </fieldset>
-          </form>
-          <div class="filter-button"><button class="show-button" type="submit">Показать</button></div>
+            <div class="filter-button"><button class="show-button" type="submit">Показать</button></div>
+          </form>    
         </div>
         
         <div class="catalog-container">
-          <section>
-            <form class="sort">
-              <fieldset class="show-how">
-                <legend class="show">Сортировать:</legend>
+          <section class="sort-type">
+            <form class="sort">  
+              <legend class="show">Сортировать:</legend>
+              <div>
                 <input type="radio" name="view" value="price" checked>По цене
                 <input type="radio" name="view" value="type">По типу
                 <input type="radio" name="view" value="name">По названию
-              </fieldset>
-
-              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button>
-              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button>
+              </div>
             </form>
+            <div class="sort-button">
+              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5   10L0 0h11"/></svg></button>
+              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button>
+            </div>
           </section>
 
-          <section>
+          <section class="grid-products">
             <h2 class="visually-hidden">Результаты сортировки</h2>
-            <ul>
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-sedona.jpg" width="360" height="620" alt="Фото страницы сайта Sedona"></a></li>
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-pink.jpg" width="360" height="620" alt="Фото страницы сайта Pink"></a></li>
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-barbershop.jpg" width="360" height="620" alt="Фото страницы сайта Borodinski"></a></li>
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-mishka.jpg" width="360" height="620" alt="Фото страницы сайта Mishka"></a></li>
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-aplus.jpg" width="360" height="620" alt="Фото страницы сайта A+"></a></li>
-              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg><img src="../img/catalogImg/img-kvast.jpg" width="360" height="620" alt="Фото страницы сайта Кваст"></a></li>
-            </ul>
-
-            <ol class="pages">
-              <li><a>1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">Следующая</a></li>
-            </ol>
-          </section>
+            <div class="products-box">
+              <div class="version-product">
+                <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="../img/catalogImg/img-sedona.jpg" width="360" height="575" alt="Фото страницы сайта Sedona">
+                <div class="product-popup">
+                  <div class="popup-info">
+                    <a class="product-name" href="#">sedona</a>
+                    <p class="product-p">Информационный сайт<br>для туристов</p>
+                    <a class="buy-product" href="#">9 900 руб.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="version-product">
+                <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="../img/catalogImg/img-pink.jpg" width="360" height="575" alt="Фото страницы сайта Pink">
+                <div class="product-popup">
+                  <div class="popup-info">
+                    <a class="product-name" href="#">pink app</a>
+                    <p class="product-p">Продуктовый лендинг<br>приложения для iOS и Android</p>
+                    <a class="buy-product" href="#">9 900 руб.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="version-product">
+                <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="../img/catalogImg/img-barbershop.jpg" width="360" height="575" alt="Фото страницы сайта Borodinski">
+                <div class="product-popup">
+                  <div class="popup-info">
+                    <a class="product-name" href="#">barbershop</a>
+                    <p class="product-p">Сайт салона красоты.<br>Для мужчин, да.</p>
+                    <a class="buy-product" href="#">9 900 руб.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="version-product">
+                <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="../img/catalogImg/img-mishka.jpg" width="360" height="575" alt="Фото страницы сайта Mishka">
+                <div class="product-popup">
+                  <div class="popup-info">
+                    <a class="product-name" href="#">mishka</a>
+                    <p class="product-p">Интернет-магазин<br>вязанных игрушек</p>
+                    <a class="buy-product" href="#">9 900 руб.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="version-product">
+                <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="../img/catalogImg/img-aplus.jpg" width="360" height="575" alt="Фото страницы сайта A+">
+                <div class="product-popup">
+                  <div class="popup-info">
+                    <a class="product-name" href="#">a plus</a>
+                    <p class="product-p">Лендиг курсов повышения<br>квалификации</p>
+                    <a class="buy-product" href="#">9 900 руб.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="version-product">
+                <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="../img/catalogImg/img-kvast.jpg" width="360" height="575" alt="Фото страницы сайта Кваст">
+                <div class="product-popup">
+                  <div class="popup-info">
+                    <a class="product-name" href="#">кваст</a>
+                    <p class="product-p">Промо-сайт производителя<br>крафтового кваса</p>
+                    <a class="buy-product" href="#">9 900 руб.</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <div>
+          <ol class="pages">
+            <li><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Следующая</a></li>
+          </ol>
         </div>
       </div>
     </main>
