@@ -828,6 +828,7 @@ a.instagram-button:focus {
 	margin-left: -477px;
 	z-index: 3;
 	padding: 64px 0px 0px 96px;
+	display: none;
 }
 
 
@@ -872,12 +873,12 @@ a.instagram-button:focus {
 
 .close-cross {
 	position: absolute;
-    border: 0;
-    cursor: pointer;
-    top: 76px;
-    left: 88%;
-    padding-left: 4px;
-    background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  top: 76px;
+  left: 88%;
+  padding-left: 4px;
+  background-color: #ffffff;
 	filter: alpha (opacity=30);
 	opacity: 0.30;
 }
@@ -914,6 +915,7 @@ a.instagram-button:focus {
 
 .login-form input:focus {
   border-color: #663d15;
+  opacity: 1.00;
 }
 
 .position-name {
@@ -921,21 +923,27 @@ a.instagram-button:focus {
   top: 177px;
   left: 97px;
   height: 45px;
-  width: 358px;
+  width: 344px;
+  padding-left: 13px;
 }
 
 .position-email {
 	position: absolute;
-	top: 174px;
-	left: 497px;height: 45px;
-	width: 358px;
+	top: 176px;
+	left: 497px;
+	height: 46px;
+	width: 344px;
+	padding-left: 14px;
 }
 
 .position-text {
 	position: absolute;
-	top: 287px;left: 98px;
-	width: 756px;
-	height: 112px;
+	top: 287px;
+	left: 98px;
+	width: 743px;
+	min-height: 104px;
+	padding-left: 12px;
+	padding-top: 12px;
 }
 
 .login-form input[type="text"] {
@@ -951,7 +959,7 @@ a.instagram-button:focus {
 
 .main-catalog-container {
 	display: flex;
-	margin-right: 140px;
+	margin-right: 135px;
 	margin-left: 141px;
 	margin-top: 57px;
 	justify-content: space-between;
@@ -1126,7 +1134,7 @@ fieldset, ul {
 }
 
 .sort-button {
-	
+	padding-left: -1px;
 }
 
 .sort-type {
@@ -1217,6 +1225,20 @@ fieldset, ul {
   align-items: center;
 }
 
+.sort-button button {
+  background: #ffffff;
+  border: 0;
+  opacity: 0.20;
+}
+
+.sort-button button:hover {
+	opacity: 0.50;
+} 
+
+.sort-button button:focus {
+	opacity: 1.00;
+}
+
 .pages li {
 	display: inline;
 }
@@ -1239,6 +1261,7 @@ fieldset, ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-right: 5px;
 }
 
 .product-head {
