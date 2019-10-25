@@ -39,6 +39,14 @@ li, ul {
 	margin: -1px;
 }
 
+.main-index {
+  min-height: 1725px;
+}
+
+.main-catalog {
+  min-height: 2455px;
+}
+
 .main-header {
 	display: flex;
 	justify-content: center;
@@ -621,7 +629,7 @@ address {
 }
 
 .container-address {
-	height: 502px;
+	height: 424px;
 	position: relative;
 }
 
@@ -686,13 +694,13 @@ address {
 }
 
 section.container-address .pointer {
-	    top: -564px;
-    z-index: 1;
-    left: 684px;
+	    top: -644px;
+	    z-index: 1;
+	    left: 684px;
 }
 
 section.address {
-	top: 134px;
+	top: 55px;
 	left: 140px;
 	z-index: 1;
 	display: flex;
@@ -703,7 +711,7 @@ section.address {
 }
 
 .map {
-	top: -230px;
+	top: -308px;
 	z-index: 0;
 }
 
@@ -727,8 +735,8 @@ div.friendship{
 }
 
 .container-social {
-	padding-right: 345px;
-	padding-top: 46px;
+	padding-right: 349px;
+	padding-top: 45px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -1475,8 +1483,24 @@ div.version-product:hover {
 }
 
 .select-button {
+	outline: none;
+	background: #eeeeee;
 	width: 49px;
-	height: 49px;}
+	height: 49px;
+}
+
+.select-button:hover {
+	background: #dfdfdf;
+} 
+
+.select-button:focus {
+	background: #dfdfdf;
+} 
+
+.select-button:checked {
+	background: #ffffff;
+	color: #a9a9a9;		
+} 
 
 .next-page {
 	flex-grow: 1;
@@ -1485,4 +1509,15 @@ div.version-product:hover {
 
 .next-button {
 	text-transform: uppercase;
-	}
+	width: 257px;
+	font-size: 16px;
+	background: #eeeeee;
+}
+
+.next-button:hover {
+background: #dfdfdf;
+}
+
+.next-button:focus {
+ opacity: 0.60;
+}
