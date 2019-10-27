@@ -150,7 +150,7 @@
             ул. Б. Конюшенная,д. 19/8</p>
             <p class="address-text2">тел. +7(812)275-75-75</p>
           </address>
-          <a class="writetous-botton" href="write-to-us.html">Напишите нам</a>
+          <a class="writetous-button" href="write-to-us.html">Напишите нам</a>
         </section>
         <img class="map" src="../img/map.png" width="100%" height="auto" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
         <a class="pointer" href="#" aria-label="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75"><img src="../img/map-marker.png" alt=""></a>
@@ -192,6 +192,58 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
       </button>
     </section>
+ 
+    <script type="text/javascript">
+      var link = document.querySelector(".writetous-button");
+
+      var popup = document.querySelector(".modal-form");
+      var close = popup.querySelector(".close-cross");
+
+      var form = popup.querySelector("form");
+      var name = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=e-mail]"); 
+      var text = popup.querySelector("[name=text]");  
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        name.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!name.value) {
+          evt.preventDefault();
+          popup.classList.add("modal-error");
+          console.log("Нужно заполнить все 3 поля")
+        };
+        if (!email.value) {
+          evt.preventDefault();
+          popup.classList.add("modal-error");
+          console.log("Нужно заполнить все 3 поля")
+        };
+        if (!text.value) {
+          evt.preventDefault();
+          popup.classList.add("modal-error");
+          console.log("Нужно заполнить все 3 поля")
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
 
   </body>
 </html>
