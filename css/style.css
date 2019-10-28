@@ -885,7 +885,7 @@ a.instagram-button:focus {
 	margin-left: -477px;
 	z-index: 3;
 	padding: 64px 0px 0px 96px;
-	/*display: none;*/
+	display: none;
 }
 
 
