@@ -634,6 +634,7 @@ address {
 }
 
 .address {
+	position: absolute;
 	text-align: center;
 	background-color: white;
 	width: 319px;
@@ -642,7 +643,7 @@ address {
 
 .address-title {
 	margin: 0;
-	padding-top: 48px;
+	padding-top: 49px;
 	padding-right: 26px;
 	font-size: 18px;
 	line-height: 30px;
@@ -661,10 +662,10 @@ address {
 .address-text2 {
 	line-height: 18px;
 	margin: 0;
-  padding-top: 19px;
-  padding-right: 46px;
-  letter-spacing: 0.02em;
-  color: #666666;
+	padding-top: 16px;
+	padding-right: 46px;
+	letter-spacing: 0.02em;
+	color: #666666;
 }
 
 .writetous-button {
@@ -694,9 +695,10 @@ address {
 }
 
 section.container-address .pointer {
-	    top: -644px;
-	    z-index: 1;
-	    left: 684px;
+	position: absolute;
+    z-index: 1;
+    left: 684px;
+    top: 90px;
 }
 
 section.address {
@@ -711,8 +713,9 @@ section.address {
 }
 
 .map {
-	top: -308px;
+	top: 0;
 	z-index: 0;
+	position: absolute;
 }
 
 div.friendship{
@@ -1088,7 +1091,6 @@ fieldset, ul {
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
   background: #00ca74;
 }
 
@@ -1395,7 +1397,6 @@ opacity: 0.30;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* min-height: 49px; */
   flex-grow: 1;
   text-transform: uppercase;
   align-items: center;
@@ -1527,7 +1528,6 @@ div.version-product:hover {
 	width: 448px;
 	justify-content: space-between;
 	padding-top: 24px;
-	/* text-transform: uppercase; */
 }
 
 .select-pages div {
@@ -1541,6 +1541,13 @@ div.version-product:hover {
 	background: #eeeeee;
 	width: 49px;
 	height: 49px;
+	border: none;
+	border-radius: 3px;
+}
+
+.select-button:active {
+	background: #ffffff;
+	border: solid 3px #dbdbdb;
 }
 
 .select-button:hover {
@@ -1548,7 +1555,9 @@ div.version-product:hover {
 } 
 
 .select-button:focus {
-	background: #dfdfdf;
+	box-shadow: inset 0px 3px 0 0 #bfbfbf;
+	background: #d5d5d5;
+	color: #a9a9a9;
 } 
 
 .select-button:checked {
@@ -1566,6 +1575,9 @@ div.version-product:hover {
 	width: 257px;
 	font-size: 16px;
 	background: #eeeeee;
+	border: none;
+	outline: none;
+	border-radius: 3px;
 }
 
 .next-button:hover {
@@ -1573,5 +1585,36 @@ background: #dfdfdf;
 }
 
 .next-button:focus {
- opacity: 0.60;
+ 	box-shadow: inset 0px 3px 0 0 #bfbfbf;
+	background: #d5d5d5;
+	color: #a9a9a9;
+}
+
+/*write-to-us*/
+
+.wu-body {
+	margin: auto;
+}
+
+.reserve-popup {
+	position: fixed;
+	background-color: #ffffff;
+	box-shadow: 0 0 40px rgb(0, 0, 0, 0.6);
+	color: #000000;
+}
+
+.popup-window {
+	width: 861px;
+	height: 523px;
+	left: 50%;
+	margin-left: -477px;
+	z-index: 3;
+	padding: 64px 0px 0px 96px;
+}
+
+.wu-title {
+	margin: 0;
+	padding-bottom: 38px;
+	font-size: 45px;
+	line-height: 45px;
 }

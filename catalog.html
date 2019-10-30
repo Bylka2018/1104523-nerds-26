@@ -46,14 +46,14 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label> 
+                  <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до<input name="max-price" type="text" value="15 000"></label> 
                 </div>
               </div>
             </fieldset> 
           </form>
-          <form class="grid" action="https://echo.htmlacademy.ru" method="post">
-            
+
+          <form class="grid" action="https://echo.htmlacademy.ru" method="post">    
             <fieldset >
               <legend class="filter-font">Сетка:</legend>
               <label class="label-adaptive" for="adaptive">
@@ -101,8 +101,9 @@
         
         <div class="catalog-container">
           <section class="sort-type">
-            <form class="sort">  
-              <legend class="show">Сортировать:</legend>
+            <h2 class="visually-hidden">Сортировка товара</h2>
+            <form class="sort">   
+              <p>Сортировать:</p>
               <div class="sort-div">
                 <label for="price">
                   <input type="radio" class="radio-sort" name="view" value="price" id="price" checked>
@@ -193,18 +194,20 @@
                   </div>
                 </div>
               </div>
-          </div>
-        </section>
-        <section class="select-pages">
-          <div>
-            <button class="select-button" type="button" checked>1</button>
-            <button class="select-button" type="button">2</button>
-            <button class="select-button" type="button">3</button>
-          </div>
-          <div class="next-page">
-            <button class="next-button" type="button">Следующая</button>
-          </div>
-        </section>
+            </div>
+          </section>
+          <section class="select-pages">
+            <h2 class="visually-hidden">Выбор страницы с товаром</h2>
+            <div>
+              <button class="select-button" type="button">1</button>
+              <button class="select-button" type="button">2</button>
+              <button class="select-button" type="button">3</button>
+            </div>
+            <div class="next-page">
+              <button class="next-button" type="button">Следующая</button>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
       
@@ -212,6 +215,7 @@
       <section class="container-address">
         <h2 class="visually-hidden">Контакты</h2>
         <section class="address">
+          <h2 class="visually-hidden">Адрес</h2>
           <address>
             <p class="address-title">Nёrds design studio</p>
             <p class="address-text1">191186, Санкт-Петербург,<br>
@@ -220,8 +224,8 @@
           </address>
           <a class="writetous-button" href="write-to-us.html">Напишите нам</a>
         </section>
-        <img class="map" src="./img/map.png" width="100%" height="auto" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
         <a class="pointer" href="#" aria-label="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75"><img src="./img/map-marker.png" alt=""></a>
+        <img class="map" src="./img/map.png" width="1439" height="417" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
       </section>
       <section class="container-social">
         <div class="friendship">
@@ -245,7 +249,6 @@
       </section>
     </footer>
 
-
     <section class="modal modal-form">
       <h2 class="modal-title">Напишите нам</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -254,13 +257,12 @@
         <label class="modal-text position-email-label" for="appointment-email">Ваш e-mail:</label>
         <input class="login-info position-email" id="appointment-email" type="email" name="e-mail" value="" maxlength="36" placeholder="email@example.com" required>
         <label class="modal-text position-text-label" for="appointment-text">Текст письма:</label>
-        <textarea class="login-info position-text" id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме" required></textarea>
+        <textarea class="login-info position-text" id="appointment-text" name="text" placeholder="В свободной форме" required></textarea>
         <button class="send-button" type="submit">Отправить</button>
       </form>
       <button class="close-cross" type="button" aria-label="Закрыть">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
       </button>
     </section>
-
   </body>
 </html>

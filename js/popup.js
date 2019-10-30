@@ -29,7 +29,7 @@ form.addEventListener("submit", function (evt) {
   if (!email.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
-    console.log("Нужно заплнить все 3 поля")
+    console.log("Нужно заполнить все 3 поля")
   }
   if (!text.value) {
     evt.preventDefault();
