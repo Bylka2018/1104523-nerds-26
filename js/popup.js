@@ -4,14 +4,14 @@ var popup = document.querySelector(".modal-form");
 var close = popup.querySelector(".close-cross");
 
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=name]");
-var email = popup.querySelector("[name=e-mail]"); 
-var text = popup.querySelector("[name=text]");  
+var surname = popup.querySelector("[name=surname]");
+var email = popup.querySelector("[name=mail]"); 
+ 
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  name.focus();
+  surname.focus();
 });
 
 close.addEventListener("click", function (evt) {
@@ -21,21 +21,10 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value) {
+  if (!surname.value || !email.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
-    console.log("Нужно заполнить все 3 поля")
-  }
-  if (!email.value) {
-    evt.preventDefault();
-    popup.classList.add("modal-error");
-    console.log("Нужно заполнить все 3 поля")
-  }
-  if (!text.value) {
-    evt.preventDefault();
-    popup.classList.add("modal-error");
-    console.log("Нужно заполнить все 3 поля")
-  }
+  }   
 });
 
 window.addEventListener("keydown", function (evt) {
