@@ -7,7 +7,6 @@ var form = popup.querySelector("form");
 var surname = popup.querySelector("[name=surname]");
 var email = popup.querySelector("[name=mail]"); 
  
-
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
