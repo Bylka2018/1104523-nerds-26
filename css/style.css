@@ -1,5 +1,6 @@
 /*index.css*/
 html {
+  min-width: 1200px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; 
 }
@@ -23,7 +24,7 @@ a {
 }
 
 .container {
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
   padding: 0 0px;
 }
@@ -45,7 +46,7 @@ li, ul {
 }
 
 .main-catalog {
-  min-height: 2455px;
+  min-width: 1200px;
 }
 
 .main-header {
@@ -60,6 +61,7 @@ li, ul {
 }
 
 .main-logo{
+  padding-left: 12px;
   padding-top: 9px;
 }
 
@@ -134,6 +136,7 @@ li, ul {
 }
 
 .slider-item{
+  min-width: 1200px;
   display: none;
   height: 430px;
 }
@@ -143,7 +146,7 @@ li, ul {
   background-repeat: no-repeat;
   background-position: 79% -3px;
   background-size: 758px 433px;
-  min-width: 1440px;
+  min-width: 1200px;
 }
 
 .slider-item:nth-child(2) {
@@ -249,7 +252,7 @@ li, ul {
   display: -ms-flexbox;
   display: flex;
   padding: 0 0px;
-  min-width: 1175px;
+  min-width: 1200px;
   height: 72px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -309,7 +312,7 @@ li, ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-right: 8px;
+  padding-right: 18px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -374,6 +377,7 @@ li, ul {
 }
 
 .products {
+  min-width: 1200px;
   padding-top: 79px;
   padding-right: 61px;
   min-height: 428px;
@@ -510,10 +514,10 @@ background-color: #eab534;
 }
 
 .line {
-  width: 1161px;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 1200px;
 }
 
 .line-vertical {
@@ -536,10 +540,11 @@ hr {
 }
 
 .about-us {
+  min-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 130px;
+  /* padding-left: 130px; */
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -549,6 +554,7 @@ hr {
 }
 
 .box1-about {
+  padding-left: 129px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,7 +707,7 @@ sup {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 0;
-  min-width: 1184px;
+  min-width: 1200px;
 }
 
 .customers-logo a {
@@ -842,12 +848,14 @@ section.address {
 }
 
 .map {
+  width: 100%;
   top: 0;
   z-index: 0;
   position: absolute;
 }
 
 div.friendship{
+  padding-right: 107px;
   padding-top: 10px;
 }
 
@@ -867,6 +875,7 @@ div.friendship{
 }
 
 .container-social {
+  min-width: 1200px;
   padding-right: 349px;
   padding-top: 45px;
   display: -webkit-box;
