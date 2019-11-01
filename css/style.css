@@ -1,5 +1,5 @@
 /*index.css*/
-s
+
 html {
   min-width: 1200px;
   -webkit-box-sizing: border-box;
@@ -487,15 +487,15 @@ li, ul {
 }
 
 .order-button-1:hover{
-background-color: #e74246;
+  background-color: #e74246;
 }
 
 .order-button-2:hover{
-background-color: #00bc6c;
+  background-color: #00bc6c;
 }
 
 .order-button-3:hover{
-background-color: #eab534;
+  background-color: #eab534;
 }
 
 .order-button-1:focus {
@@ -1000,7 +1000,7 @@ a.instagram-button:focus {
 
 .modal-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 @-webkit-keyframes bounce {
@@ -1230,18 +1230,17 @@ a.instagram-button:focus {
 /*catalog css*/
 
 .main-catalog-container {
+ -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-left: 81px;
+  padding-right: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 135px;
-  margin-left: 141px;
   margin-top: 57px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   margin-left: 0;
   margin-right: 0;
-  justify-content: space-evenly;
-  padding-left: 22px;
   height: 2160px;
 }
 
@@ -1389,8 +1388,8 @@ fieldset, ul {
 }
 
 .label-gallery {
-  padding-top: 16px;
-  padding-bottom: 12px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 }
 
 .radio-grid {
@@ -1532,11 +1531,11 @@ label {
 }
 
 [type="checkbox"]:disabled + span::before {
-opacity: 0.30;
+  opacity: 0.30;
 }
 
 [type="checkbox"]:disabled + span {
-opacity: 0.30;
+  opacity: 0.30;
 }
 
 .grid {
@@ -1580,6 +1579,7 @@ opacity: 0.30;
 
 .sort-type {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-pack: end;
   -ms-flex-wrap: wrap;
@@ -1599,7 +1599,6 @@ opacity: 0.30;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 
 .catalog-navigation {
   padding-top: 2px; 
@@ -1724,7 +1723,6 @@ opacity: 0.30;
 div.version-product:hover .product-head {
   opacity: 1.0;
 }
-
 
 div.version-product:hover .product-popup {
   z-index: 2;
