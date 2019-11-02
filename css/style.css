@@ -1,7 +1,7 @@
 /*index.css*/
 
 html {
-  min-width: 1200px;
+  min-width: 1100px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; 
 }
@@ -46,7 +46,7 @@ li, ul {
 }
 
 .main-catalog {
-  min-width: 1200px;
+  min-width: 1100px;
 }
 
 .main-header {
@@ -136,7 +136,7 @@ li, ul {
 }
 
 .slider-item{
-  min-width: 1200px;
+  min-width: 1100px;
   display: none;
   height: 430px;
 }
@@ -146,7 +146,7 @@ li, ul {
   background-repeat: no-repeat;
   background-position: 79% -3px;
   background-size: 758px 433px;
-  min-width: 1200px;
+  min-width: 1100px;
 }
 
 .slider-item:nth-child(2) {
@@ -248,11 +248,11 @@ li, ul {
 }
 
 .site-navigation {
+  width: 1201px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0px;
-  min-width: 1200px;
   height: 72px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -377,7 +377,7 @@ li, ul {
 }
 
 .products {
-  min-width: 1200px;
+  min-width: 1100px;
   padding-top: 79px;
   padding-right: 61px;
   min-height: 428px;
@@ -517,7 +517,7 @@ li, ul {
   height: 2px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1200px;
+  min-width: 1100px;
 }
 
 .line-vertical {
@@ -540,7 +540,7 @@ hr {
 }
 
 .about-us {
-  min-width: 1200px;
+  min-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,7 +713,7 @@ sup {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 0;
-  min-width: 1200px;
+  min-width: 1100px;
 }
 
 .customers-logo a {
@@ -881,7 +881,7 @@ div.friendship{
 }
 
 .container-social {
-  min-width: 1200px;
+  min-width: 1100px;
   padding-right: 349px;
   padding-top: 45px;
   display: -webkit-box;
@@ -1386,16 +1386,16 @@ fieldset, ul {
 }
 
 .filter-feature {
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 .label-advantage {
   padding-top: 15px;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 }
 
 .label-gallery {
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 16px;
 }
 
@@ -1501,7 +1501,7 @@ label {
 
 .label-adaptive {
   padding-top: 12px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 .label-fixed {
