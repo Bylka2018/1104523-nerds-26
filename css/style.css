@@ -553,6 +553,8 @@ hr {
 }
 
 .box1-about {
+  padding-bottom: 19px;
+  padding-right: 120px;
   padding-left: 129px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,6 +572,7 @@ hr {
 }
 
 .box2-about {
+  padding-bottom: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,7 +619,7 @@ hr {
 .about-work1 {
   height: 16px;
   margin: 0;
-  padding-top: 7px;
+  padding-top: 8px;
   letter-spacing: 0.01em;
   font-size: 16px;
   padding-left: 10px;
@@ -626,7 +629,7 @@ hr {
 
 .about-ul {
   padding-left: 10px;
-  padding-bottom: 37px;
+  padding-bottom: 41px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,6 +663,10 @@ hr {
   padding-bottom: 8px;
   margin: 0;
   width: 343px;
+}
+
+.about-accuracy li {
+  width: 106px;
 }
 
 ul.about-accuracy .about-p {
