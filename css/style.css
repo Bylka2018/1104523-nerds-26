@@ -1210,6 +1210,10 @@ a.instagram-button:focus {
 
 .position-text {
   position: absolute;
+  margin: 0px;
+  width: 742px;
+  height: 118px;
+  resize: none;
   top: 287px;
   left: 98px;
   width: 743px;
