@@ -16,11 +16,11 @@
           <img src="./img/nerds-logo.svg" width="215" height="79" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <div class="navigation">
-          <ul class="navigation-store">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html" class="link-1">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+          <ul class="navigation-store list-nostyle">
+            <li class="list-nostyle"><a href="#">Студия</a></li>
+            <li class="list-nostyle"><a href="#">Клиенты</a></li>
+            <li class="list-nostyle"><a href="catalog.html" class="link-1">Магазин</a></li>
+            <li class="list-nostyle"><a href="#">Контакты</a></li>
           </ul>
           <a class="basket" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина</a>
         </div>
@@ -59,15 +59,15 @@
               <legend class="filter-font">Сетка:</legend>
               <label class="label-adaptive" for="adaptive">
                 <input type="radio" class="radio-grid" name="view" value="adaptive" id="adaptive" checked>
-                <span>Адаптивная</span>
+                <span tabindex="0">Адаптивная</span>
               </label>
               <label class="label-fixed" for="fixed">
                 <input type="radio" class="radio-grid" name="view" value="fixed" id="fixed">
-                <span>Фиксированная</span>
+                <span tabindex="0">Фиксированная</span>
               </label>
               <label for="rubber">
                 <input type="radio" class="radio-grid" name="view" value="rubber" id="rubber" disabled>
-                <span>Резиновая</span>
+                <span tabindex="0">Резиновая</span>
               </label>
             </fieldset>
 
@@ -77,23 +77,23 @@
               <legend class="filter-font filter-feature">Особенности:</legend>
               <label for="my-checkbox1">
                 <input type="checkbox"  id="my-checkbox1" name="slider">
-                <span>Слайдер</span>
+                <span tabindex="0">Слайдер</span>
               </label>
               <label class="label-advantage" for="my-checkbox2">
                 <input type="checkbox" id="my-checkbox2" name="advantage">
-                <span>Блок преимуществ</span>
+                <span tabindex="0">Блок преимуществ</span>
               </label>
               <label for="my-checkbox3">
                 <input type="checkbox"  id="my-checkbox3" name="news">
-                <span>Новости</span>
+                <span tabindex="0">Новости</span>
               </label>
               <label class="label-gallery" for="my-checkbox4">
                 <input type="checkbox" id="my-checkbox4" name="gallery" disabled>
-                <span>Галерея</span>
+                <span tabindex="0">Галерея</span>
               </label>
               <label for="my-checkbox5">
                 <input type="checkbox" id="my-checkbox5" name="basket">
-                <span>Корзина</span>
+                <span tabindex="0">Корзина</span>
               </label>
             </fieldset>
             <div class="filter-button"><button class="show-button" type="submit">Показать</button></div>
@@ -108,15 +108,15 @@
               <div class="sort-div">
                 <label for="price">
                   <input type="radio" class="radio-sort" name="view" value="price" id="price" checked>
-                  <span class="sort-span">По цене</span>
+                  <span class="sort-span" tabindex="0">По цене</span>
                 </label>
                 <label for="type">
                   <input type="radio" class="radio-sort" name="view" value="type" id="type">
-                  <span class="sort-span">По типу</span>
+                  <span class="sort-span" tabindex="0">По типу</span>
                 </label>
                 <label for="name">
                   <input type="radio" class="radio-sort" name="view" value="name" id="name">
-                  <span class="sort-span">По названию</span>
+                  <span class="sort-span" tabindex="0">По названию</span>
                 </label>
               </div>
             </form>
@@ -129,7 +129,7 @@
           <section class="grid-products">
             <h2 class="visually-hidden">Результаты сортировки</h2>
             <div class="products-box">
-              <div class="version-product">
+              <div class="version-product" tabindex="0">
                 <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                 <img src="./img/catalogImg/img-sedona.jpg" width="360" height="575" alt="Фото страницы сайта Sedona">
                 <div class="product-popup">
@@ -140,7 +140,7 @@
                   </div>
                 </div>
               </div>
-              <div class="version-product">
+              <div class="version-product" tabindex="0">
                 <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                 <img src="./img/catalogImg/img-pink.jpg" width="360" height="575" alt="Фото страницы сайта Pink">
                 <div class="product-popup">
@@ -151,7 +151,7 @@
                   </div>
                 </div>
               </div>
-              <div class="version-product">
+              <div class="version-product" tabindex="0">
                 <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                 <img src="./img/catalogImg/img-barbershop.jpg" width="360" height="575" alt="Фото страницы сайта Borodinski">
                 <div class="product-popup">
@@ -162,7 +162,7 @@
                   </div>
                 </div>
               </div>
-              <div class="version-product">
+              <div class="version-product" tabindex="0">
                 <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                 <img src="./img/catalogImg/img-mishka.jpg" width="360" height="575" alt="Фото страницы сайта Mishka">
                 <div class="product-popup">
@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="version-product">
+              <div class="version-product" tabindex="0">
                 <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                 <img src="./img/catalogImg/img-aplus.jpg" width="360" height="575" alt="Фото страницы сайта A+">
                 <div class="product-popup">
@@ -184,7 +184,7 @@
                   </div>
                 </div>
               </div>
-              <div class="version-product">
+              <div class="version-product" tabindex="0">
                 <svg class="product-head" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                 <img src="./img/catalogImg/img-kvast.jpg" width="360" height="575" alt="Фото страницы сайта Кваст">
                 <div class="product-popup">
@@ -217,7 +217,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <section class="address">
           <h2 class="visually-hidden">Адрес</h2>
-          <address>
+          <address class="main-address">
             <p class="address-title">Nёrds design studio</p>
             <p class="address-text1">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная,д. 19/8</p>
@@ -235,14 +235,14 @@
           <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
         </div>
         <div class="child-social">
-          <ul class="social">
-            <li>
+          <ul class="social list-nostyle">
+            <li class="list-nostyle">
               <a class="vk-button" href="https://vk.com" aria-label="Нёрдс во Вконтакте"></a>
             </li>
-            <li>
+            <li class="list-nostyle">
               <a class="fb-button" href="https://www.facebook.com" aria-label="Нёрдс в Фейсбук"></a>
             </li>
-            <li>
+            <li class="list-nostyle">
               <a class="instagram-button" href="https://www.instagram.com" aria-label="Нёрдс в Инстаграм"></a>
             </li>
           </ul>
@@ -268,7 +268,7 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871632972!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572824283770!5m2!1sru!2sru" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871632972!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572824283770!5m2!1sru!2sru" width="766" height="560" frameborder="0" allowfullscreen=""></iframe>
       <p><img src="img/map-popup.png" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
       <button class="modal-close" type="button" aria-label="Закрыть">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
@@ -277,7 +277,7 @@
 
     <script src="./js/minimal.popup.js"></script>
 
-    <script src="./js/map.js"></script>
+    <script src="./js/minimal.map.js"></script>
 
   </body>
 </html>
