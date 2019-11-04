@@ -211,7 +211,7 @@ li, ul {
   margin-left: 140px;
   display: block;
   width: 201px;
-  padding: 17px 19px;
+  padding: 16px 19px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -470,7 +470,7 @@ li, ul {
   display: inline-block;
   border-radius: 7px;
   text-transform: uppercase;
-  padding: 14px 40px;
+  padding: 14px 41px;
   color: white;
 } 
 
@@ -546,16 +546,16 @@ hr {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 28px;
-  padding-right: 125px;
-  padding-bottom: 36px;
+  /* padding-right: 125px; */
+  padding-bottom: 16px;
 }
 
 .box1-about {
+  width: 666px;
   padding-bottom: 19px;
-  padding-right: 120px;
-  padding-left: 129px;
+  padding-left: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +572,7 @@ hr {
 }
 
 .box2-about {
+  padding-right: 51px;
   padding-bottom: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,10 +586,6 @@ hr {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.percent {
-  margin-left: 4px;
 }
 
 .about-title2{
@@ -619,7 +616,7 @@ hr {
 .about-work1 {
   height: 16px;
   margin: 0;
-  padding-top: 8px;
+  padding-top: 4px;
   letter-spacing: 0.01em;
   font-size: 16px;
   padding-left: 10px;
@@ -629,7 +626,7 @@ hr {
 
 .about-ul {
   padding-left: 10px;
-  padding-bottom: 41px;
+  padding-bottom: 36px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,7 +657,7 @@ hr {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   margin: 0;
   width: 343px;
 }
@@ -707,13 +704,13 @@ sup {
 }
 
 .customers-logo {
+  width: 1182px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 0;
-  min-width: 1100px;
 }
 
 .customers-logo a {
@@ -743,6 +740,7 @@ ul.customers-logo li {
 }
 
 address {
+  width: 222px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,7 +859,7 @@ section.address {
 }
 
 div.friendship{
-  padding-right: 107px;
+  padding-right: 281px;
   padding-top: 10px;
 }
 
@@ -876,14 +874,14 @@ div.friendship{
 .sale {
   line-height: 22px;
   margin: 0;
-  padding-bottom: 12px;
-  padding-top: 8px;
+  padding-bottom: 16px;
+  padding-top: 4px;
 }
 
 .container-social {
   min-width: 1100px;
-  /*padding-right: 240px;*/
-  padding-top: 44px;
+  /* padding-right: 383px; */
+  padding-top: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +889,7 @@ div.friendship{
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -914,7 +912,7 @@ ul.social li {
 }
 
 .child-social {
-  padding-left: 140px;
+  padding-left: 72px;
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
@@ -995,8 +993,33 @@ a.instagram-button:focus {
   top: 121px;
   left: 50%;
   margin-left: -477px;
-  z-index: 3;
+  z-index: 4;
   padding: 64px 0px 0px 96px;
+}
+
+.modal-map {
+  top: 30%;
+  left: 50%;
+  width: 766px;
+  height: 560px;
+  margin-top: -280px;
+  margin-left: -390px;
+  z-index: 3;
+  border: 7px solid white;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 5;
+  border: none;
 }
 
 .modal-show {
@@ -1183,6 +1206,11 @@ a.instagram-button:focus {
 .login-info :focus {
   opacity: 1.0;
   border-color: #000000;
+}
+
+.login-info:invalid {
+ border-color: red;
+ color: red;
 }
 
 .login-form input:focus {
@@ -1451,7 +1479,7 @@ fieldset, ul {
   font-size: 18px;
   font-weight: bold;
   margin: 0;
-  padding-left: 23px;
+  padding-left: 21px;
 }
 
 .sort-div {
