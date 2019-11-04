@@ -1,3 +1,4 @@
+'use strict'
 var linkMap = document.querySelector(".pointer");
 var linkMap2 = document.querySelector(".map");
 

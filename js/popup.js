@@ -1,3 +1,4 @@
+'use strict'
 var link = document.querySelector(".writetous-button");
 
 var popup = document.querySelector(".modal-form");
