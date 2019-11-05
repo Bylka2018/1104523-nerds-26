@@ -1520,33 +1520,25 @@ fieldset, ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 275px;
-  padding-right: 40px;
+  width: 273px;
+  padding-right: 47px;
 }   
 
 .radio-sort {
-  border: 0; 
-  clip: rect(0 0 0 0); 
-  height: 1px; margin: -1px; 
-  overflow: hidden; 
-  padding: 0; 
-  position: absolute; 
-  width: 1px;
-}
-
-.radio-sort + span {
+  font-size: 14px;
   opacity: 0.30;
+  color: #000000;
 }
 
-.radio-sort:hover + span {
+.radio-sort:hover {
   opacity: 0.60;
 }
 
-.radio-sort:checked + span {
+.radio-sort:checked {
   opacity: 1.00;
 }
 
-.radio-sort:active + span {
+.radio-sort:active {
   opacity: 1.00;
 }
 
@@ -1642,7 +1634,10 @@ label {
 }
 
 .sort-button {
-  padding-right: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  padding-right: 23px;
 }
 
 .sort-type {
@@ -1721,17 +1716,16 @@ label {
   align-items: center;
 }
 
-.sort-button button {
-  background: #ffffff;
-  border: 0;
+.sort-button a {
   opacity: 0.20;
+  color: #000000;
 }
 
-.sort-button button:hover {
+.sort-button a:hover {
   opacity: 0.50;
 } 
 
-.sort-button button:focus {
+.sort-button a:focus {
   opacity: 1.00;
 }
 
