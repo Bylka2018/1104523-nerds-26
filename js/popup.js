@@ -16,6 +16,7 @@ link.addEventListener("click", function (evt) {
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
+  form.reset();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
 });
@@ -31,6 +32,7 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
+      form.reset();
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
     }

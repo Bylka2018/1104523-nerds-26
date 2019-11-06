@@ -6,7 +6,7 @@
     <title>Дизайн-студия Нёрдс</title>
     <link href="./css/minimal.normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="./css/style.css"  type="text/css" rel="stylesheet">
+    <link href="./css/minimal.style.css"  type="text/css" rel="stylesheet">
   </head>
 
   <body>
@@ -15,15 +15,13 @@
         <a class="main-logo" href="index.html">
           <img src="./img/nerds-logo.svg" width="215" height="79" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
-        <div class="navigation">
-          <ul class="navigation-store list-nostyle">
-            <li class="list-nostyle"><a href="#">Студия</a></li>
-            <li class="list-nostyle"><a href="#">Клиенты</a></li>
-            <li class="list-nostyle"><a href="catalog.html">Магазин</a></li>
-            <li class="list-nostyle"><a href="#">Контакты</a></li>
-          </ul>
-          <a class="basket" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина</a>
-        </div>
+        <ul class="navigation-store list-nostyle">
+          <li class="list-nostyle navigation-item"><a href="#">Студия</a></li>
+          <li class="list-nostyle navigation-item"><a href="#">Клиенты</a></li>
+          <li class="list-nostyle navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="list-nostyle navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <a class="basket" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина</a>
       </nav>
     </header>
 
@@ -41,19 +39,25 @@
           </div>
           <ul class="slider-list list-nostyle">
             <li class="slider-item list-nostyle">
-              <h3>Долго, дорого,<br>скрупулезно.</h3>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p> 
-              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <div class="slider-info">
+                <h3>Долго, дорого,<br>скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p> 
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </div>
             </li>
             <li class="slider-item list-nostyle">
-              <h3>Любим математику<br> как никто другой</h3>
-              <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <div class="slider-info">
+                <h3>Любим математику<br> как никто другой</h3>
+                <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </div>
             </li>
             <li class="slider-item list-nostyle">
-              <h3>Только ночь<br>только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <div class="slider-info">
+                <h3>Только ночь<br>только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </div>  
             </li>
           </ul>
         </div>
@@ -83,10 +87,6 @@
         </ul>
       </section>
 
-      <div class="line">
-        <hr>
-      </div>
-      
       <section class="about-us">
         <div class="box1-about">
           <h2 class="visually-hidden">О нас</h2>
@@ -118,25 +118,15 @@
         </div>
       </section>
 
-      <div class="line">
-        <hr>
-      </div>
-
       <section class="customers">
         <h2 class="visually-hidden">Наши клиенты</h2>
-        <div class="customers-logo">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/indexImg/logo-1.png" width="263" height="179" alt="Ссылка на страницу нашего клиента HTML Academy"></a>
-          <hr class="line-vertical">
-          <a href="#"><img src="./img/indexImg/logo-2.png" width="261" height="179" alt="Ссылка на страницу нашего клиента барбершоп Бородинский"></a>
-          <hr class="line-vertical">
-          <a href="#"><img src="./img/indexImg/logo-3.png" width="263" height="179" alt="Ссылка на страницу нашего клиента Pink"></a>
-          <hr class="line-vertical">
-          <a href="#"><img src="./img/indexImg/logo-4.png" width="263" height="179" alt="Ссылка на страницу нашего клиента Mishka"></a>
-        </div>
+        <ul class="customers-logo">
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/indexImg/logo-1.png" width="263" height="179" alt="Ссылка на страницу нашего клиента HTML Academy"></a></li>
+          <li><a href="#"><img src="./img/indexImg/logo-2.png" width="261" height="179" alt="Ссылка на страницу нашего клиента барбершоп Бородинский"></a></li>
+          <li><a href="#"><img src="./img/indexImg/logo-3.png" width="263" height="179" alt="Ссылка на страницу нашего клиента Pink"></a></li>
+          <li><a href="#"><img src="./img/indexImg/logo-4.png" width="263" height="179" alt="Ссылка на страницу нашего клиента Mishka"></a></li>
+        </ul>
       </section>
-      <div class="line">
-        <hr>
-      </div>
     </main>
 
     <footer class="footer">
@@ -153,7 +143,7 @@
           <a class="writetous-button" href="write-to-us.html">Напишите нам</a>
         </section>
         <a class="pointer" href="#" aria-label="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75"><img src="./img/map-marker.png" width="367" height="190" alt=""></a>
-        <img class="map" src="./img/map.png" width="1439" height="417" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
+        <img class="map" src="./img/map.png" width="1439" height="419" alt="Дизайн студия Нёрдс 191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8, тел. +7(812)275-75-75">
       </section>
       <section class="container-social">
         <div class="friendship">
@@ -195,7 +185,7 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871632972!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572824283770!5m2!1sru!2sru" width="766" height="560" frameborder="0" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871632972!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572824283770!5m2!1sru!2sru" width="766" height="560" allowfullscreen=""></iframe>
       <p><img src="img/map-popup.png" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
       <button class="modal-close" type="button" aria-label="Закрыть">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
